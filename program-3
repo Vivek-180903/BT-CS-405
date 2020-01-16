@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+double power(double ,int =2);
+int main()
+{
+	int n;
+	double m, result;
+	cout<< "enter base value and power:";
+	
+	cin>>m>>n;
+	result=power(m,n);
+	cout<<"result is "<<result<<endl;
+	cout<<"when value of power not given:"<<endl;
+	result=power(m);
+	cout<< "result ="<<result;
+}
+	double power(double m, int n)
+	{
+		double x=1.0;
+		if(n==0)
+		return 1;
+		else 
+		for (int i=1;i<=n;i++)
+		x=x*m;
+		return x;
+		
+	}

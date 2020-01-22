@@ -1,0 +1,41 @@
+#include<iostream>
+using namespace std;
+class coordinate
+{
+	int x;
+	int y;
+	public:
+		void point(int m,int n)
+		{
+			x=m;
+			y=n;
+		}
+		coordinate operator +(coordinate z)
+		{
+			coordinate sum;
+			sum.x=x+z.x;
+			sum.y=y+z.y;
+			return sum;
+			
+		}
+		void display()
+		{
+			cout<<"sum : (m,n)=("<<x<<","<<y<<")"<<endl;
+			
+		}
+		
+};
+int main()
+{
+	coordinate p1,p2;
+	int m,n;
+	cout<<"enter the first coordinate :"<<endl;
+	cin>>m>>n;
+	p1.point(m,n);
+	cout<<"enter the second coordinate :"<<endl;
+	cin>>m,n;
+	p2.point(m,n);
+	coordinate p3=p1+p2;
+	p3.display();
+	
+}

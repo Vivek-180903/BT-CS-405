@@ -1,0 +1,26 @@
+#include<iostream>
+//using namespace std;
+class square
+{
+	int number;
+	public:
+		square(int n)
+		{
+			number=n;
+		}
+		inline int squars ()
+		{
+		return number*number;			
+			
+		}
+		
+};
+int main()
+{
+	int n;
+	printf("enter the no to find square of a no");
+	scanf("%d",&n);
+	 square obj=square(n);
+	printf("square of %d is %d",n,obj.squars());
+	return 0;
+}

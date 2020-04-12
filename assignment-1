@@ -1,0 +1,12 @@
+Program to display the elements of the array
+
+#include <iostream>
+using namespace std;
+ int main()
+{
+    char array[100];
+    cout<<"enter the array : ";
+    cin.getline(array,100);
+    cout<<"the entered array is : "<<array<<endl;
+    return 0; 
+};
